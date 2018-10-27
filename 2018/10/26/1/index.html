@@ -5,12 +5,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 爱的迷茫">
-    <meta name="description" content="
+    <meta name="keywords" content="nmap的安装以及使用, 爱的迷茫">
+    <meta name="description" content="本章介绍的是端口扫描工具nmap,用来扫描网上电脑开放的网络连接端。具体功能是确定哪些服务运行在哪些连接端，并且推断计算机运行哪个操作系统。它是网络管理员必用的软件之一，以及用以评估网络系统安全。
 
-本版本仅适用于Win环境本文关键字： Hexo绿色版，Hexo便携版，Hexo配置，Hexo，U盘
 
-Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百">
+1.安装nmapnmap官网地址：ht">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | 爱的迷茫</title>
+    <title>nmap的安装以及使用 | 爱的迷茫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -252,13 +251,13 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        nmap的安装以及使用
                     </div>
                 </div>
             </div>
@@ -276,97 +275,61 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
     <div class="card">
         <div class="card-content article-info">
             
+            <div class="article-tag">
+                
+                <a href="/tags/nmap/" target="_blank">
+                    <span class="chip bg-color">nmap</span>
+                </a>
+                
+            </div>
+            
             <div class="post-info">
+                
+                <span class="post-cate">
+                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                    
+                    <a href="/categories/渗透工具/" class="post-category" target="_blank">
+                        渗透工具
+                    </a>
+                    
+                </span>
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-10-27
+                    <i class="fa fa-clock-o fa-fw"></i>2018-10-26
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop.png" alt=""></p>
-<blockquote>
-<p><strong>本版本仅适用于Win环境</strong><br>本文关键字： <strong>Hexo绿色版</strong>，<strong>Hexo便携版</strong>，<strong>Hexo配置</strong>，<strong>Hexo</strong>，<strong>U盘</strong></p>
-</blockquote>
-<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百个页面在几秒内瞬间完成渲染；还拥有各式各样的插件等等。</p>
-<p>但是就像很多教程里面写的那样，搭建 Hexo 本地环境，需要安装 Node.js、Git 以及使用 npm 进行安装和配置。这对于毫无经验的新手来说，是一个很大的挑战。同时，由于这些环境的存在，导致如果需要更换计算机的时候，重新安装配置一个新的Hexo环境，又得花费一些功夫。</p>
-<p>所以呢，锵锵，我们整合了一个 Hexo 便携版，来简化本地环境的部署。</p>
-<p>####<strong>版本介绍</strong><br>那么所谓的便携版到底是什么？便携版就是将 Hexo 本地环境所需要的各种依赖环境的整合到一起，做成的不需要安装的版本。</p>
-<p>本便携版（Release 1.0.0）所包含的软件如下：</p>
-<blockquote>
-<ul>
-<li>Git: 2.7.4</li>
-<li>Nodejs: 6.10.1</li>
-<li>Npm: 4.4.1</li>
-<li>Hexo: 3.2.2</li>
-</ul>
-</blockquote>
-<p>为了便携的需要，不能配置固定的环境变量，所以除此之外还有相应的批处理文件，下文将详细介绍。</p>
-<p>####<strong>从零开始，1分钟搭建Hexo写作环境</strong><br>说了这么多，我们这就开始教你如何在1分钟内，从零开始搭建Hexo写作环境！</p>
-<p>#####1 注册一个Github帐号</p>
-<p>1.1 进入<a href="https://github.com" target="_blank" rel="external">Github</a>，并在右边的3个框框中分别填写 用户名、邮箱地址、账户密码，并点击 <strong><code>Sign up for Github</code></strong>;</p>
-<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop2.png" alt="图1.1.1"></p>
-<p>1.2 进入欢迎页面后，点击<strong><code>Finish sign up</code></strong>;</p>
-<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop3.png" alt="图1.2.1"></p>
-<p>1.3 进入到这一步之后（<strong>图1.3.1</strong>），先别记着点任何东西，查看你的邮箱，应该会收到如下的邮件（<strong>图1.3.2</strong>），确认你的邮件。否则，你会看到错误页面（<strong>图1.3.3</strong>）。query完毕之后在<strong>图1.3.1</strong>所示的页面，点击<strong><code>+ New repository</code></strong>;</p>
-<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop5.png" alt="图1.3.1"></p>
-<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop6.png" alt="图1.3.2"></p>
-<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop7.png" alt="图1.3.3"></p>
-<p>1.4 请在红框中的 <strong><code>Repository name</code></strong> 里面输入 <strong><code>用户名.github.io</code></strong> ( <strong>用户名</strong> 就是你刚刚 <strong>步骤1.1</strong> 中注册的用户名)，然后点击 <strong><code>Create repository</code></strong>;</p>
-<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop8.png" alt="图1.4.1"></p>
-<p>1.5 至此，Github网页注册的部分完毕</p>
-<p>####2 下载HEXO Portable</p>
-<p>2.1 访问我们的 <a href="https://project.bitmoe.cn/PortableHexo/" target="_blank" rel="external">HEXO Portable</a> 页面，或者 <a href="https://github.com/Bitmoe/PortableHexo" target="_blank" rel="external">Github仓库</a> 下载最新的便携版；</p>
-<p>2.2 双击得到的自解压文件，解压到你需要安装博客的地方，可以选择硬盘或者U盘；</p>
-<p>####3 配置你的环境</p>
-<p>3.1 在你的博客的文件夹，你会发现很多批处理文件，我先介绍下各个文件的用途：</p>
-<blockquote>
-<ul>
-<li>配置基本信息 &gt;&gt; 配置博客的基本环境</li>
-<li>配置Github部署 &gt;&gt; 配置博客的部署</li>
-<li>启动命令行 &gt;&gt; 启动带环境变量的Git-Bash，否则无法使用node、npm、git等命令</li>
-<li>新建文章 &gt;&gt; 新建一篇文章</li>
-<li>渲染并本地测试 &gt;&gt; 生成并本地预览</li>
-<li>渲染并部署 &gt;&gt; 生成并部署到GitHub</li>
-<li>重置配置文件 &gt;&gt; 重置_config.yml</li>
-</ul>
-</blockquote>
-<p>3.2 我们继续进行环境配置，双击<strong><code>配置基本信息</code></strong>并按顺序输入以下信息：</p>
-<blockquote>
-<ul>
-<li>主标题：顾名思义</li>
-<li>副标题：顾名思义</li>
-<li>描述：顾名思义</li>
-<li>作者：顾名思义</li>
-<li>网站地址：填写 <strong>用户名.github.io</strong> （此处的用户名为<strong>步骤1.1</strong>中填写的用户名）<br><strong>如果您已经购买了域名，可以参看相关的文章！</strong></li>
-</ul>
-</blockquote>
-<p>3.3 双击<strong><code>配置Github部署</code></strong>并按顺序输入以下信息：</p>
-<blockquote>
-<ul>
-<li>Github的用户名：此处的用户名为<strong>步骤1.1</strong>中填写的用户名</li>
-<li>Github注册邮箱：此处的注册邮箱为<strong>步骤1.1</strong>中填写的注册邮箱</li>
-</ul>
-</blockquote>
-<p>3.4 输入完毕之后，会进行测试部署，等待屏幕提示<strong>下面将进行部署测试，稍后将有一个openssh的对话框出现，请输入你的github用户密码。</strong>的时候，按回车继续；（此处的用户密码为<strong>步骤1.1</strong>中填写的用户密码）</p>
-<p>3.5 然后继续等待，此时屏幕会出现n多行，耐心等待即可；</p>
-<p>3.6 等待屏幕提示<strong>请访问 <a href="https://用户名.github.io" target="_blank" rel="external">https://用户名.github.io</a> 查看是否部署成功！</strong>的时候，在浏览器中输入<strong><a href="https://用户名.github.io" target="_blank" rel="external">https://用户名.github.io</a> </strong>，理论上可以看到你的Hexo站点！（此处的用户名为<strong>步骤1.1</strong>中填写的用户名）</p>
-<p>3.7 至此，你的Hexo环境就配置完成了，这样你的这个Hexo博客文件夹无论移动到哪一台电脑，都能通过<strong>启动命令行</strong>出现的bash命令行，或者其余便捷的批处理文件比如<strong>新建文章</strong>、<strong>渲染并本地测试</strong>、<strong>渲染并部署</strong>进行相应的操作。</p>
-<p>3.8 如果你在配置中出错，可以运行<strong>重置配置文件</strong>后，再重复<strong>3.1~3.6步骤</strong></p>
-<p>####4 开始享受纯粹的Hexo写作吧！</p>
-<p>####5 备注</p>
-<blockquote>
-<ul>
-<li>本便携版以及本文均使用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external">CC BY-NC-SA 4.0</a>协议；</li>
-<li>本文所有权归 <a href="http://qistchan.com" target="_blank" rel="external">QistChan</a> &amp; <a href="https://wwww.bitmoe.com" target="_blank" rel="external">Bitmoe Inc.</a> 所有；</li>
-<li>本便携版由 <a href="https://www.bitmoe.com" target="_blank" rel="external">Bitmoe Inc.</a> 维护并提供技术支持；</li>
-<li>需要技术支持可以在<a href="https://github.com/Bitmoe/PortableHexo" target="_blank" rel="external">Github仓库</a> 提交<strong><code>Issues</code></strong>；</li>
-<li>Written with <a href="https://stackedit.io/" target="_blank" rel="external">StackEdit</a>.</li>
-</ul>
-</blockquote>
+                <p>本章介绍的是端口扫描工具nmap,用来扫描网上电脑开放的网络连接端。具体功能是确定哪些服务运行在哪些连接端，并且推断计算机运行哪个操作系统。它是网络管理员必用的软件之一，以及用以评估网络系统安全。</p>
+<p><img src="https://t1.picb.cc/uploads/2018/10/26/JbI86d.jpg" alt="nmap"></p>
+<a id="more"></a>
+<h3 id="1-安装nmap"><a href="#1-安装nmap" class="headerlink" title="1.安装nmap"></a>1.安装nmap</h3><p>nmap官网地址：<a href="https://nmap.org/" target="_blank" rel="external">https://nmap.org/</a>  </p>
+<p>Linux:在Linux终端上运行如下命令：apt-get install nmap</p>
+<p><img src="https://i.loli.net/2018/10/26/5bd319c20d9e2.png" alt="下载图片"></p>
+<p><a href="https://nmap.org/download.html#windows" target="_blank" rel="external">Windows版本下载地址点我</a>  </p>
+<h3 id="2-入门扫描"><a href="#2-入门扫描" class="headerlink" title="2.入门扫描"></a>2.入门扫描</h3><p>Windows 打开cmd窗口</p>
+<p>linux  打开终端即可</p>
+<p>在cmd窗口里面输入 <strong>nmap ip地址</strong></p>
+<p>我们除了可以直接扫描IP，也可以扫描网站</p>
+<p><img src="https://i.loli.net/2018/10/26/5bd31eca31b6a.png" alt="nmap baidu"></p>
+<p><strong>nmap www.baidu.com</strong></p>
+<p>这里我们用百度做示范，扫描了百度的开放端口，也是使用了<strong>nmap &lt;目标主机&gt;</strong>的扫描语句</p>
+<h3 id="3-Nmap扫描多个IP-主机"><a href="#3-Nmap扫描多个IP-主机" class="headerlink" title="3.Nmap扫描多个IP/主机"></a>3.Nmap扫描多个IP/主机</h3><p><strong>nmap 192.168.1.1 192.168.1.2</strong></p>
+<p><img src="https://i.loli.net/2018/10/26/5bd32474a6d51.png" alt="nmap 192 1 2"></p>
+<p>如上，这里我们扫描了 192.168.1.1与192.168.1.2这两个IP</p>
+<p>我们要将扫描的主机用空格隔开，比如<strong>nmap 192.168.1.1&lt;空格&gt;192.168.1.100</strong>，这样就可以扫描192.168.1.1和192.168.1.2两台主机的信息了</p>
+<h3 id="4-扫描一个网段的主机信息"><a href="#4-扫描一个网段的主机信息" class="headerlink" title="4.扫描一个网段的主机信息"></a>4.扫描一个网段的主机信息</h3><p><strong>nmap 192.168.0/24</strong></p>
+<p>我们只需要更改一下搜索的目标就可以扫描，这里扫描了192.168.1.0-255这一整个网段，利用的指令还是<strong>nmap 192.168.1.0/24</strong></p>
+<p><img src="https://i.loli.net/2018/10/26/5bd3251aa4a91.png" alt="nmap 0/24"></p>
+<p>这里需要注意的是，扫描一整个网段需要的时间较长，<strong>如果想要查看扫描进度可以在终端中按下Tab键便可以查看扫描进度</strong></p>
+<h3 id="5-描某个范围内的存活主机"><a href="#5-描某个范围内的存活主机" class="headerlink" title="5.描某个范围内的存活主机"></a>5.描某个范围内的存活主机</h3><p><strong>nmap 192.168.1.1-100</strong></p>
+<p><img src="https://i.loli.net/2018/10/26/5bd325a5aadcc.png" alt="nmap 1-100"></p>
+<p>这里我们使用了nmap 192.168.1.1-100的指令，意思是扫描192.168.1.1到192.168.1.200这一IP段中存活的主机，我们只需要将搜索目标的IP增加范围即可</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p><strong>在我们的Nmap扫描教程第一节中，我们学习了如何扫描单个主机/多个主机/整个网段以及某个IP段的存活主机信息</strong></p>
+<p><strong>但是Nmap中还有许多有趣的扫描方式，这里我们暂且不提，在下一节的教程中，我们将学习不同协议的扫描方式</strong></p>
 
             </div>
             <hr/>
@@ -505,7 +468,7 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
                     <span class="reprint-tip">Reprint please specify: </span>
                     <a href="mimang.github.io" class="b-link-green">爱的迷茫</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/10/27/hello-world/" class="b-link-green">Hello World</a>
+                    <a href="/2018/10/26/1/" class="b-link-green">nmap的安装以及使用</a>
                 </p>
             </div>
         </div>
@@ -524,8 +487,8 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Current</div>
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">Previous</div>
             <div class="card">
                 <a href="/2018/10/27/hello-world/">
                     <div class="card-image">
@@ -543,9 +506,9 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
 
 Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-27
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-27
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -554,14 +517,13 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">Next</div>
+            <div class="article-badge right-badge text-color">Current</div>
             <div class="card">
                 <a href="/2018/10/26/1/">
                     <div class="card-image">
@@ -593,6 +555,7 @@ Hexo是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Ma
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
